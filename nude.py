@@ -24,11 +24,11 @@ loaded_model.eval()
 transforms = weight.transforms()
 
 
-app = FastAPI(title='Image Classification Model')
+app = FastAPI(title='Single eye Image classification')
 
 @app.get('/')
 def get():
-    return {'Message : Image Classification Model'}
+    return {'Message ' : 'Single eye Image classification'}
 
 
 @app.post("/predict-image")
