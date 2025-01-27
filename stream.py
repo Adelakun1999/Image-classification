@@ -15,7 +15,7 @@ weight = torchvision.models.EfficientNet_B0_Weights.DEFAULT
 loaded_model = torchvision.models.efficientnet_b0(weights = weight)
 
 from torch import nn
-class_names = ['nude', 'safe', 'sexy']
+class_names = ['not-safe', 'safe', 'sexy'] 
 
 
 loaded_model.classifier = nn.Linear(in_features=1280 ,  out_features = len(class_names))
